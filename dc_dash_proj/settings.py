@@ -75,10 +75,15 @@ WSGI_APPLICATION = 'dc_dash_proj.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'demodcproj', ### DEFAULT SCHEMA == "public"
+        'USER': 'demoprojuser', ### NO CAPITAL LETTERS in USER NAME for Postgres
+        'PASSWORD': 'passdemo',
+        'HOST': 'localhost', ## IF NO == localhost --- then ERROR.
+        'PORT': '',
     }
 }
+
 
 
 # Password validation
