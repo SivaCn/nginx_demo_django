@@ -1,0 +1,7 @@
+django-admin startproject dc_dash_proj .
+python manage.py startapp dc_dash
+python manage.py startapp pyfintrader
+
+https://github.com/RohitDhankar/nginx_demo_django.git
+
+
